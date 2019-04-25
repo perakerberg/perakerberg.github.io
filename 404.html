@@ -9,7 +9,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles.b7c593fcf199f4e9b6bb.css"></head>
+<script>
+    function playAudio(){
+        console.log('playing');
+        var hack = new Audio('assets/swoosh.wav');
+
+        hack.play();
+    }
+</script>
 <body>
-  <app-root></app-root>
+    <div id="almightyDiv" onTouchStart="playAudio()">
+     <app-root></app-root>
+    </div>
 <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.9d3a8743be9f041e6ba8.js"></script><script type="text/javascript" src="main.b932e6edb0747a4d9b58.js"></script></body>
 </html>
